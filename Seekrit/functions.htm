@@ -1,0 +1,76 @@
+<script type="text/javascript">
+
+	function validateSearch() {
+		var hashtag = document.getElementById('hashtag').value;
+
+		if(hashtag == ""){
+			alert('Please enter a hashtag ');
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+
+	function validateSubmit() {
+		var hashtag = document.getElementById('hashtag').value;
+		var message = document.getElementById('message').value;
+
+
+		if(hashtag == ""){
+			alert('Please fill in all fields');
+			return false;
+		}
+		else if(hashtag.length >= 20){
+			alert('hashtag must be less than 20 characters');
+			return false;
+		}
+		else if(message == ""){
+			alert('message field is blank');
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+
+	function validateDelete() {
+		var hashtag = document.getElementById('hashtag').value;
+		var password = document.getElementById('password').value;
+		if(hashtag == ""){
+			alert('Please enter a hashtag ');
+			return false;
+		}
+		if(password == ""){
+			alert('Please enter your delete key ');
+			return false;
+		}		
+		else {
+			return true;
+		}
+	}
+
+	function validateSubmitFooter() {
+		var message = document.getElementById('message').value;
+		
+		if(message == ""){
+			alert('Please enter a message!');
+			return false;
+		}
+		
+		else {
+			return true;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+	</script>

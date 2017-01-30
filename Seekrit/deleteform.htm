@@ -1,0 +1,21 @@
+<!--delete form-->
+<div class="row">
+	<form class="form-horizontal" action="deleteresult.php" method="post" onsubmit="return validateDelete();"/>
+		<fieldset>
+			<input type="hidden" name="formID" value="delete">
+			<!--hashtag-->
+			<div class="input-group col-md-4 col-md-offset-4 text-center">
+				<span class="input-group-addon" id="basic-addon1">#</span> 
+				<input id="hashtag" name="hashtag" type="text" placeholder="hashtag" class="form-control">
+			</div>
+			<br>
+			<!--message key-->
+			<div class="input-group col-md-4 col-md-offset-4 text-center">
+				<input id="password" name="password" type="text" placeholder="enter unique message key" class="form-control">
+				<span class="input-group-btn">
+					<button type="submit" class="btn btn-default btn-primary">Go!</button>
+				</span>
+			</div>
+		</fieldset>
+	</form>
+</div>
